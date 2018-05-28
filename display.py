@@ -13,7 +13,7 @@ def display(message):
     print(message)
     show_message(device, message, fill="white", font=proportional(LCD_FONT))
 
-if __name__ == "__main__"
+if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='arguments',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
