@@ -1,6 +1,6 @@
 import display
 
-from flask import Flask, json
+from flask import Flask, request, json
 app = Flask(__name__)
 
 @app.route('/')
