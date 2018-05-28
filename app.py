@@ -15,8 +15,8 @@ def api_message():
         return "Text Message: " + request.data
 
     elif request.headers['Content-Type'] == 'application/json':
-        display.display(json.dumps(request.json))
-        return "JSON Message: " + json.dumps(request.json)
+        display.display(json.dumps(request.json.message))
+        return "JSON Message: " + json.dumps(request.json.message)
 
 @app.route('/api/<text>')
 def api_text(text):
